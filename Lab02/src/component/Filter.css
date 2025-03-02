@@ -1,0 +1,35 @@
+.filter_container {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "type "
+      "time "
+      "rating "
+      "footer ";
+    grid-template-columns: 1fr;
+    padding: 5px;
+    height: 100%;
+    row-gap: 0px;
+  }
+  .filter_container > div {
+    border: solid gray 1px;
+    padding: 10px;
+  }
+.filter_container > div.header {
+    grid-area: header;
+    height: 20px;
+  }
+.filter_container > div.type {
+    grid-area: type;
+    height: 100px;
+   
+  }
+.filter_container > div.time {
+    grid-area: time;
+  }
+.filter_container > div.rating {
+    grid-area: rating;
+  }
+.filter_container > div.footer {
+    grid-area: footer;
+  }
