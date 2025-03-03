@@ -4,20 +4,17 @@
     "header header"
     "menu content"
     "footer footer";
-  grid-template-columns: 2fr 2fr;
-  gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 600px 100px;
   padding: 5px;
-  width: 1600px;
-  height: 800px;
 }
 .container > div {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
-  
+  border: solid gray 1px;
 }
 .container > div.header {
   grid-area: header;
-  height: 80px;
 }
 .container > div.header > div {
   display: flex;
@@ -28,21 +25,16 @@
 
 .container > div.menu {
   grid-area: menu;
-  height: 600px;
-  width: 600px;
 }
 .container > div.content {
   grid-area: content;
-  height: 600px;
-  width: 1000px;
 }
 .container > div.footer {
   grid-area: footer;
-  height: 80px;
 }
 
-#flex-container{
+#flex-container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
