@@ -1,0 +1,9 @@
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    background-color: gray;
+    height: 40px;
+    width: 40px;
+}

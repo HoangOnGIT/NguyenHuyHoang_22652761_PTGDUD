@@ -1,0 +1,7 @@
+.button {
+    background-color: lightpink;
+    color: palevioletred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

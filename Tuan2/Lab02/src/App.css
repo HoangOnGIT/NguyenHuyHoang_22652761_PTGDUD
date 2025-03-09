@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100px 600px 100px;
+  padding: 5px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border: solid gray 1px;
+}
+.container > div.header {
+  grid-area: header;
+}
+.container > div.header > div {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+}
+
+#flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}

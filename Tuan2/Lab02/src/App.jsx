@@ -3,7 +3,6 @@ import Logo from "./component/Logo";
 import AppNav from "./component/AppNav";
 import Profile from "./component/Profile";
 import Filter from "./component/Filter";
-import Content from "./component/content";
 
 function App() {
   return (
@@ -17,9 +16,7 @@ function App() {
         <div class="menu" style={{ color: "black" }}>
           <Filter />
         </div>
-        <div class="content">
-          <Content />
-        </div>
+        <div class="content"></div>
         <div class="footer"></div>
       </div>
     </>
