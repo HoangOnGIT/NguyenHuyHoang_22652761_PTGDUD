@@ -8,21 +8,8 @@ function PopupTab({ name, children }) {
     setActive(!active);
   }
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-evenly",
-      }}
-    >
-      <div
-        className="header"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "390px",
-        }}
-      >
+    <div className="flex flex-col justify-evenly">
+      <div className="header flex justify-between w-[300px]">
         <b>{name}</b>
         <button onClick={() => handleClick()}>
           <img src={upperarrow}></img>

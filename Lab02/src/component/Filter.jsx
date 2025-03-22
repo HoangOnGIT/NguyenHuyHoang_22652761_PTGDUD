@@ -27,38 +27,23 @@ export default function Filter() {
   return (
     <>
       <div class="filter_container">
-        <div class="header" style={{ display: "flex" }}>
-          <img src={list1} style={{ width: "25px", height: "25px" }}></img>
+        <div class="header" className="flex">
+          <img src={list1} className="h-[25px] w-[25px] "></img>
           <b>FILTER</b>
         </div>
         <div class="type">
           <PopupTab name="Type">
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+            <div className="grid grid-cols-2 mx-auto space-x-15">
               {types.map((name) => (
                 <CatergoryCheckbox name={name} />
               ))}
             </div>
           </PopupTab>
         </div>
-        <div class="time">
+        <div className="time">
           <PopupTab name="Time">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                height: "120px",
-                flexDirection: "column",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-around",
-                  alignItems: "center",
-                  width: "200px",
-                }}
-              >
-                {" "}
+            <div className="flex items-center flex-col h-15">
+              <div className="flex justify-around items-center w-50">
                 <span>30 mins</span> <span>50 mins</span>
               </div>
               <img src={rangeImg}></img>
@@ -73,17 +58,7 @@ export default function Filter() {
           </PopupTab>
         </div>
         <div class="footer">
-          <button
-            style={{
-              backgroundColor: "#F44B86",
-              color: "white",
-              width: "100%",
-              height: "60%",
-              fontSize: "20px",
-              borderRadius: "10px",
-              padding: "10px",
-            }}
-          >
+          <button className="bg-pink-500 text-white rounded-2xl text-[20px] p-1.5 w-full m-3 hover:scale-110 hover:bg-pink-300 transition-all duration-300 ease-in-out focus:ring">
             Apply
           </button>
         </div>

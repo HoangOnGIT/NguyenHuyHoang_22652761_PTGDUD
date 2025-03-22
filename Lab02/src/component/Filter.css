@@ -1,4 +1,4 @@
-.filter_container {
+/* .filter_container {
   display: grid;
   grid-template-areas:
     "header "
@@ -36,4 +36,4 @@
 }
 .filter_container > div.footer {
   grid-area: footer;
-}
+} */

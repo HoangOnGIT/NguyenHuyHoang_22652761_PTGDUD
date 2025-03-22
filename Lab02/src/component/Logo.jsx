@@ -1,13 +1,17 @@
-import logo from "../assets/avatar_small.png"
-import searchImg from "../assets/search.png"
+import logo from "../assets/avatar_small.png";
+import searchImg from "../assets/search.png";
 
 export default function Logo() {
-    return <div>
-        <img src={logo} style={{ width: '150px', marginRight: '20px' }}></img>
-        <div style={{ display: "flex" }}>
-            <img src={searchImg} style={{ height: '30px' }}></img>
-            <input type='text' style={{ background: 'White', borderRadius: '5px', border: 'solid Gray 1px', height:'30px', width:'250px', color:'gray' }}>
-            </input>
-        </div>
+  return (
+    <div className="flex items-center justify-between">
+      <img className="mr-2.5" src={logo}></img>
+      <div className="flex">
+        <img src={searchImg} className="h-[30px]"></img>
+        <input
+          type="text"
+          className="bg-white rounded-2xl border-pink-400 h-[30px] w-[250px] text-gray-600"
+        ></input>
+      </div>
     </div>
-}   
+  );
+}

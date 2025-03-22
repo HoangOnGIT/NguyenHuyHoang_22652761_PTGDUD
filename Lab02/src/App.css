@@ -1,4 +1,6 @@
-.container {
+@import "tailwindcss";
+
+/* .container {
   display: grid;
   grid-template-areas:
     "header header"
@@ -37,4 +39,4 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-}
+} */
