@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import CounterReducer from './reducer/CounterReducer'
-import { Provider } from 'react-redux'
+import { useState } from "react";
+import "./App.css";
+import CounterReducer from "./reducer/CounterReducer";
+import { Provider } from "react-redux";
 
-import store from "../src/redux/CounterRedux"
-import CounterReduxComponent from './redux/CounterReduxComponent'
+import store from "./redux/CounterRedux";
+import CounterReduxComponent from "./redux/CounterReduxComponent";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -19,7 +19,7 @@ function App() {
         <CounterReduxComponent />
       </Provider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,4 +1,5 @@
 import CounterReducer from "./CounterReducerRedux";
-import {createStore} from "react-redux"
+import { createStore } from "redux";
 
-export default store = createStore(CounterReducer)
+const store = createStore(CounterReducer);
+export default store;

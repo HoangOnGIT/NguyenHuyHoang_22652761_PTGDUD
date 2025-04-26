@@ -1,14 +1,27 @@
-function CounterReducer(state, action) {
+const initialState = {
+  count: 0,
+};
 
-    switch (action.type) {
-        case 'inc': {
-            return { ...state, counter: state.counter + 1 }
-        }
-        case 'desc': {
-            return { ...state, counter: state.counter - 1 }
-        }
-    }
+const CounterReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "INCREMENT":
+      return {
+        ...state,
+        count: state.count + 1,
+      };
+    case "DECREMENT":
+      return {
+        ...state,
+        count: state.count - 1,
+      };
+    case "RESET":
+      return {
+        ...state,
+        count: 0,
+      };
+    default:
+      return state;
+  }
+};
 
-}
-
-export default CounterReducer
+export default CounterReducer;

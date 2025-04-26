@@ -1,10 +1,16 @@
-import React from 'react'
-import { Provider } from 'react-redux'
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function CounterReduxComponent() {
+  const count = useSelector((state) => state.count);
+  const dispatch = useDispatch();
+
   return (
-    <Provider store={store} >
-    <div>CounterReduxComponent</div>
-    </Provider>
-  )
+    <div>
+      <h2>Counter: {count}</h2>
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>+</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>-</button>
+      <button onClick={() => dispatch({ type: "RESET" })}>Reset</button>
+    </div>
+  );
 }
